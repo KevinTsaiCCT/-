@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>早安健康延伸閱讀快捷鍵</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap');
+        
+        body {
+            background-color: #ffffff; /* 框框外的顏色維持白色 */
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .brand-green { color: #78bf22; }
+        .bg-brand-green { background-color: #78bf22; }
+        .brand-dark-green { color: #527326; }
+        .brand-orange { color: #d2672d; }
+        .bg-brand-orange { background-color: #d2672d; }
+        
+        /* 讓卡片有活潑的漂浮感 */
+        .article-card {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid transparent;
+        }
+        .article-card:hover {
+            transform: translateY(-3px) scale(1.02);
+            border-color: #78bf22;
+            box-shadow: 0 10px 20px -10px rgba(120, 191, 34, 0.2);
+        }
+        .article-card:active {
+            transform: scale(0.98);
+        }
+
+        /* 裝飾性的小圓點背景 */
+        .bg-dots {
+            background-image: radial-gradient(#78bf22 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen p-4 flex flex-col items-center justify-center">
+    <div class="absolute inset-0 bg-dots -z-10"></div>
+
+    <div class="max-w-md w-full bg-[#f8fbf3] p-6 rounded-[2rem] shadow-xl border border-gray-100">
+        <div class="text-center mb-6">
+            <div class="inline-block bg-brand-green px-3 py-0.5 rounded-full text-white font-bold text-xs mb-2">
+                延伸閱讀
+            </div>
+            <h1 class="text-brand-dark-green text-xl font-black mb-2 tracking-tight">關於嘴破，你或許想知道⋯</h1>
+            <div class="w-12 h-1 bg-brand-orange mx-auto rounded-full opacity-60"></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 mb-6">
+            
+            <a href="https://edh.tw/articles/CuX6SAG" target="_blank" class="article-card bg-gray-50 p-4 rounded-2xl shadow-sm flex flex-col items-center text-center">
+                <span class="text-[10px] border border-brand-green text-brand-green px-1.5 py-0.5 rounded mb-2">醫療保健</span>
+                <span class="font-bold text-gray-800 text-sm leading-tight">嘴巴破洞怎麼趕快好？治療看哪科？嘴破原因、症狀、吃什麼</span>
+            </a>
+
+            <a href="https://edh.tw/articles/3im67VE" target="_blank" class="article-card bg-gray-50 p-4 rounded-2xl shadow-sm flex flex-col items-center text-center">
+                <span class="text-[10px] border border-brand-green text-brand-green px-1.5 py-0.5 rounded mb-2">飲食建議</span>
+                <span class="font-bold text-gray-800 text-sm leading-tight">研究：嘴巴破洞別再用這種牙膏！3食物助嘴破快速復原</span>
+            </a>
+
+            <a href="https://edh.tw/articles/48dAVwv" target="_blank" class="article-card bg-gray-50 p-4 rounded-2xl shadow-sm flex flex-col items-center text-center">
+                <span class="text-[10px] border border-brand-green text-brand-green px-1.5 py-0.5 rounded mb-2">症狀改善</span>
+                <span class="font-bold text-gray-800 text-sm leading-tight">舌頭破如何改善？診所看哪科、吃什麼才快好？舌頭破洞位置、原因、用藥</span>
+            </a>
+
+            <a href="https://edh.tw/articles/pZ1rVnb" target="_blank" class="article-card bg-gray-50 p-4 rounded-2xl shadow-sm flex flex-col items-center text-center">
+                <span class="text-[10px] border border-brand-green text-brand-green px-1.5 py-0.5 rounded mb-2">生活習慣</span>
+                <span class="font-bold text-gray-800 text-sm leading-tight">吃太補、喝咖啡都是嘴破元兇！6個方法輕鬆解決</span>
+            </a>
+
+            <a href="https://edh.tw/articles/HqhbUac" target="_blank" class="article-card bg-gray-50 p-4 rounded-2xl shadow-sm flex flex-col items-center text-center">
+                <span class="text-[10px] border border-brand-green text-brand-green px-1.5 py-0.5 rounded mb-2">居家衛生</span>
+                <span class="font-bold text-gray-800 text-sm leading-tight">筷子洗錯比馬桶蓋髒7倍！有3大跡象快淘汰：一級致癌物恐入口</span>
+            </a>
+
+            <a href="https://edh.tw/articles/xfpZWMww" target="_blank" class="article-card bg-gray-50 p-4 rounded-2xl shadow-sm flex flex-col items-center text-center">
+                <span class="text-[10px] border border-brand-green text-brand-green px-1.5 py-0.5 rounded mb-2">家事撇步</span>
+                <span class="font-bold text-gray-800 text-sm leading-tight">衣服越洗越髒？不用買清潔劑，洗衣機加「這杯」陳年黑垢全吐出</span>
+            </a>
+
+        </div>
+
+        <div class="pt-4 border-t border-brand-green/20 flex flex-col items-center gap-2">
+            <div class="flex items-center gap-2">
+                <img src="https://media-edh-cdn.h2u.io/image/article/default/jsw2xk35Dlg1iWM9mG6nWTqj8Sy4Q0r1GeIgPuLb.png" 
+                    alt="早安健康 Logo" class="h-8 object-contain">
+                <div class="h-4 w-px bg-gray-300"></div>
+                <span class="text-gray-400 text-xs tracking-wide">每天都做得到的健康</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
